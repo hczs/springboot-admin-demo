@@ -1,0 +1,16 @@
+server:
+  port: 13151
+spring:
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:12150/
+  application:
+    name: client01
+
+# 配置 actuator 打开所有监控项
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
